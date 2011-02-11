@@ -1,0 +1,49 @@
+Keepalive balancer module for nginx.
+
+This module implements cache for backend connections.  As of now, it may
+be used with memcached upstreams.
+
+Note: don't even try it with http backends.  It won't work.
+
+Note: it's for nginx 0.7.* and up, won't work with nginx 0.6.*.
+
+Configuration directives:
+
+    keepalive <num> [single]
+
+        Scope: upstream
+
+        Switches on keepalive module for the upstream in question.
+
+        Parameters:
+
+            - <num>
+              Maximum number of connections to cache.  If there isn't enough
+              room to cache new connections - last recently used connections
+              will be kicked off the cache.
+
+            - single
+              Treat everything as single host.  With this flag connections
+              to different backends are treated as equal.
+
+Sample configuration:
+
+    upstream memd {
+        server 127.0.0.1:11211;
+        server 10.0.0.2:11211;
+        keepalive 10;
+    }
+
+This module was tested to work with standard round-robin balancing, but
+it's believed to be compatible with more sophisticated balancers.  The only
+requirement is to activate them *before* this module, e.g.:
+
+    upstream memd {
+        server 127.0.0.1:11211;
+        server 10.0.0.2:11211;
+        ip_hash;
+        keepalive 10;
+    }
+
+To compile nginx with keepalive module, use "--add-module <path>" option to
+nginx configure.

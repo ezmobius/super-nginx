@@ -1,0 +1,26 @@
+
+Changes with upstream keepalive module 0.4 (2010-12-15):
+
+    *) Bugfix: the "[alert] ... open socket ... left in connection ..."
+       messages were logged on nginx worker process gracefull exit for
+       each cached connection; the bug had appeared in 0.3.
+
+
+Changes with upstream keepalive module 0.3 (2010-09-14):
+
+    *) Bugfix: cached connections might be closed needlessly.
+       Thanks to Martin Fjordvald.
+
+    *) Bugfix: in memory allocation error handling on config creation.
+
+
+Changes with upstream keepalive module 0.2 (2009-05-15):
+
+    *) Feature: expiremental support for FastCGI (requires patches).
+
+    *) Bugfix: invalid connections might be cached.
+
+
+Changes with upstream keepalive module 0.1 (2008-10-24):
+
+    *) The first public version.
