@@ -16,3 +16,22 @@ This pretty much makes nginx itself a killer app server that you could write asy
 with in lua that run inside nginx in coroutines never blocking the nginx event loop
 
 this is super powerfull stuff and definitely deserves some blog posts which I will have forthcoming at my blog: http://brainspl.at
+
+
+Included modules:
+ngx_devel_kit
+set-misc-nginx-module
+ngx_http_auth_request_module
+echo-nginx-module
+memc-nginx-module
+lua-nginx-module
+srcache-nginx-module
+drizzle-nginx-module
+rds-json-nginx-module
+nginx-eval-module
+xss-nginx-module
+ngx_http_upstream_keepalive
+encrypted-session-nginx-module
+form-input-nginx-module
+headers-more-nginx-module
+redis2-nginx-module
