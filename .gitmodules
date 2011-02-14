@@ -26,10 +26,6 @@
         path = src/memc-nginx-module
         url = https://github.com/agentzh/memc-nginx-module.git
 
-[submodule "nginx-upload-module"]
-        path = src/nginx-upload-module
-        url = git://github.com/vkholodkov/nginx-upload-module.git
-
 [submodule "ngx_devel_kit"]
         path = src/ngx_devel_kit
         url = https://github.com/simpl/ngx_devel_kit.git
