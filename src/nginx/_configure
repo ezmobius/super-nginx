@@ -2,13 +2,12 @@
 
 ./configure --prefix=`pwd`/../../super-nginx \
     --add-module=`pwd`/../ngx_devel_kit \
+    --add-module=`pwd`/../lua-nginx-module \
+    --add-module=`pwd`/../echo-nginx-module \
     --add-module=`pwd`/../set-misc-nginx-module \
     --add-module=`pwd`/../ngx_http_auth_request_module \
-    --add-module=`pwd`/../echo-nginx-module \
     --add-module=`pwd`/../memc-nginx-module \
-    --add-module=`pwd`/../lua-nginx-module \
     --add-module=`pwd`/../srcache-nginx-module \
-    --add-module=`pwd`/../drizzle-nginx-module \
     --add-module=`pwd`/../rds-json-nginx-module \
     --add-module=`pwd`/../nginx-eval-module \
     --add-module=`pwd`/../xss-nginx-module \
@@ -17,3 +16,15 @@
     --add-module=`pwd`/../form-input-nginx-module \
     --add-module=`pwd`/../headers-more-nginx-module \
     --add-module=`pwd`/../redis2-nginx-module \
+    --add-module=`pwd`/../array-var-nginx-module \
+    --add-module=`pwd`/../chunkin-nginx-module \
+    --add-module=`pwd`/../nginx-upload-module \
+    --add-module=`pwd`/../nginx-upload-progress-module \
+    --add-module=`pwd`/../nginx_http_push_module \
+
+
+
+
+
+
+

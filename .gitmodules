@@ -1,0 +1,83 @@
+[submodule "drizzle-nginx-module"]
+        path = src/drizzle-nginx-module
+        url = https://github.com/chaoslawful/drizzle-nginx-module.git
+
+[submodule "encrypted-session-nginx-module"]
+        path = src/encrypted-session-nginx-module
+        url = git://github.com/agentzh/encrypted-session-nginx-module.git
+
+[submodule "echo-nginx-module"]
+        path = src/echo-nginx-module
+        url = git://github.com/agentzh/echo-nginx-module.git
+
+[submodule "form-input-nginx-module"]
+        path = src/form-input-nginx-module
+        url = https://github.com/calio/form-input-nginx-module.git
+
+[submodule "headers-more-nginx-module"]
+        path = src/headers-more-nginx-module
+        url = git://github.com/agentzh/headers-more-nginx-module.git
+
+[submodule "lua-nginx-module"]
+        path = src/lua-nginx-module
+        url = git://github.com/ezmobius/lua-nginx-module.git
+
+[submodule "memc-nginx-module"]
+        path = src/memc-nginx-module
+        url = https://github.com/agentzh/memc-nginx-module.git
+
+[submodule "nginx-upload-module"]
+        path = src/nginx-upload-module
+        url = git://github.com/vkholodkov/nginx-upload-module.git
+
+[submodule "ngx_devel_kit"]
+        path = src/ngx_devel_kit
+        url = https://github.com/simpl/ngx_devel_kit.git
+
+[submodule "ngx_http_auth_request_module"]
+        path = src/ngx_http_auth_request_module
+        url = git://github.com/PiotrSikora/ngx_http_auth_request_module.git
+
+[submodule "rds-json-nginx-module"]
+        path = src/rds-json-nginx-module
+        url = git://github.com/agentzh/rds-json-nginx-module.git
+
+[submodule "redis2-nginx-module"]
+        path = src/redis2-nginx-module
+        url = git://github.com/agentzh/redis2-nginx-module.git
+
+[submodule "set-misc-nginx-module"]
+        path = src/set-misc-nginx-module
+        url = git://github.com/agentzh/set-misc-nginx-module.git
+
+[submodule "srcache-nginx-module"]
+        path = src/srcache-nginx-module
+        url = https://github.com/agentzh/srcache-nginx-module.git
+
+[submodule "xss-nginx-module"]
+        path = src/xss-nginx-module
+        url = git://github.com/agentzh/xss-nginx-module.git
+
+[submodule "lua-redis-parser"]
+        path = src/lua-redis-parser
+        url = git://github.com/agentzh/lua-redis-parser.git
+
+[submodule "chunkin-nginx-module"]
+        path = src/chunkin-nginx-module
+        url = git://github.com/agentzh/chunkin-nginx-module.git
+
+[submodule "array-var-nginx-module"]
+        path = src/array-var-nginx-module
+        url = git://github.com/agentzh/array-var-nginx-module.git
+
+[submodule "nginx_http_push_module"]
+        path = src/nginx_http_push_module
+        url = git://github.com/slact/nginx_http_push_module.git
+
+[submodule "nginx-eval-module"]
+        path = src/nginx-eval-module
+        url = git://github.com/agentzh/nginx-eval-module.git
+
+[submodule "nginx-upload-progress-module"]
+        path = src/nginx-upload-progress-module
+        url = git://github.com/masterzen/nginx-upload-progress-module.git
