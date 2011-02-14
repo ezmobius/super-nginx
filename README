@@ -10,7 +10,7 @@ Make sure to install Cmake first(read the top of that gist)
 You will end up with a 'super-nginx' directory at the top level of this git repo
 that is super badass.
 
-Thanks mosly to the work of agentzh and chaoslawful for their killer nginx modules
+Thanks mostly to the work of agentzh and chaoslawful for their killer nginx modules
 
 This pretty much makes nginx itself a killer app server that you could write async applications
 with in lua that run inside nginx in coroutines never blocking the nginx event loop
@@ -19,19 +19,25 @@ this is super powerfull stuff and definitely deserves some blog posts which I wi
 
 
 Included modules:
-ngx_devel_kit
-set-misc-nginx-module
-ngx_http_auth_request_module
-echo-nginx-module
-memc-nginx-module
-lua-nginx-module
-srcache-nginx-module
+array-var-nginx-module
+chunkin-nginx-module
 drizzle-nginx-module
-rds-json-nginx-module
-nginx-eval-module
-xss-nginx-module
-ngx_http_upstream_keepalive
+echo-nginx-module
 encrypted-session-nginx-module
 form-input-nginx-module
 headers-more-nginx-module
+lua-nginx-module
+lua-redis-parser
+memc-nginx-module
+nginx-eval-module
+nginx-upload-module
+nginx-upload-progress-module
+nginx_http_push_module
+ngx_devel_kit
+ngx_http_auth_request_module
+ngx_http_upstream_keepalive
+rds-json-nginx-module
 redis2-nginx-module
+set-misc-nginx-module
+srcache-nginx-module
+xss-nginx-module
