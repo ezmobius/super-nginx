@@ -1,2 +1,2 @@
-src/nginx/objs*
+src/nginx/objs/*
 super-nginx
