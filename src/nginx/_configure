@@ -18,7 +18,6 @@
     --add-module=`pwd`/../redis2-nginx-module \
     --add-module=`pwd`/../array-var-nginx-module \
     --add-module=`pwd`/../chunkin-nginx-module \
-    --add-module=`pwd`/../nginx-upload-module \
     --add-module=`pwd`/../nginx-upload-progress-module \
     --add-module=`pwd`/../nginx_http_push_module \
 
