@@ -13,14 +13,14 @@ fi;
 
 here=`pwd`
 
+export LUAJIT_INC='/usr/local/include/luajit-2.0'
+export LUAJIT_LIB='/usr/local/lib/lua/5.1'
+
 if [ "$1" == "--with-luajit" ]; then
   ./src/build-lua.sh cleanup
 fi;
 
 cd $here
-
-export LUAJIT_INC='/usr/local/include/luajit-2.0'
-export LUAJIT_LIB='/usr/local/lib/lua/5.1'
 
 git submodule init
 git submodule update
