@@ -25,6 +25,8 @@ export LUAJIT_LIB='/usr/local/lib/lua/5.1'
 git submodule init
 git submodule update
 
+cp src/config-for-nginx-lua-module src/lua-nginx-module/config
+
 pushd src/nginx-upload-module
 git fetch origin 2.2
 git checkout 2.2
