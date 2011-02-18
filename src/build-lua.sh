@@ -45,7 +45,7 @@ echo "Installing luarocks"
 curl -O "http://luarocks.org/releases/luarocks-2.0.4.1.tar.gz"
 tar xzf luarocks-2.0.4.1.tar.gz
 pushd luarocks-2.0.4.1
-./configure --lua-suffix=jit && make && sudo make install
+./configure --lua-suffix=jit --with-lua-include=/usr/local/include/luajit-2.0 && make && sudo make install
 popd
 rm -rf luarocks-2.0.4.1.tar.gz luarocks-2.0.4.1
 
