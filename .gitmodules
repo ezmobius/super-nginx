@@ -66,10 +66,6 @@
         path = src/array-var-nginx-module
         url = git://github.com/agentzh/array-var-nginx-module.git
 
-[submodule "nginx_http_push_module"]
-        path = src/nginx_http_push_module
-        url = git://github.com/slact/nginx_http_push_module.git
-
 [submodule "nginx-eval-module"]
         path = src/nginx-eval-module
         url = git://github.com/agentzh/nginx-eval-module.git
