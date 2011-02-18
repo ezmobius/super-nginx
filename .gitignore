@@ -1,2 +1,3 @@
 src/nginx/objs/*
-super-nginx
+super-nginx/*
+src/nginx/Makefile
