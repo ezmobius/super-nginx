@@ -73,7 +73,6 @@ memc-nginx-module
 nginx-eval-module
 nginx-upload-module
 nginx-upload-progress-module
-nginx_http_push_module
 ngx_devel_kit
 ngx_http_auth_request_module
 ngx_http_upstream_keepalive
