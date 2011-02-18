@@ -1,16 +1,57 @@
 This is a killer build of nginx including most of the good modules out there
 
 It has been patched a little to support luajit-beta-6 and I have made a batteries included
-luajit installer for max OSX you can find here:
+luajit installer that is included with this package.
 
-https://gist.github.com/807334
+All you need to do is first install Cmake:
+http://www.cmake.org/files/v2.8/cmake-2.8.3-Darwin-universal.tar.gz
+(Make sure to also install the bin scripts when it asks you at the end of the installer)
 
-Make sure to install Cmake first(read the top of that gist)
+Now to build super-nginx all you need to do is run this from the top level of this checkout:
+
+./build.sh
+
+Or if you also want it to build luajit-beta6 for you:
+
+./build --with-luajit
+
+./build --help will also show usage
+
+If you don't already have LuaJit and just want the full meal deal 
+make sure to include the --with-luajit flag
 
 You will end up with a 'super-nginx' directory at the top level of this git repo
 that is super badass.
 
-Thanks mostly to the work of agentzh and chaoslawful for their killer nginx modules
+Start it up by doing this:
+
+$ cd super-nginx
+$ ./sbin/nginx
+
+Then open your browser to:
+
+http://localhost:3000/
+
+The nginx.conf that is included has a few examples already setup, try these url's out and 
+have a peek at the nginx.conf to see how they work:
+
+# hello world
+location / 
+
+# another hello world using nginx variables mixed with lua
+location /concat
+
+# try access /nginx_var?a=urmom
+location /nginx_var
+
+# transparent non-blocking I/O in Lua via subrequests
+location /lua
+
+# GET /recur?num=5 this is pretty cool example of recursion in the nginx.conf file
+location /recur
+
+Thanks mostly to the work of @agentzh and @chaoslawful for their killer nginx modules
+And many thanks to the other nginx module authors that wrote modules I've included in this build
 
 This pretty much makes nginx itself a killer app server that you could write async applications
 with in lua that run inside nginx in coroutines never blocking the nginx event loop

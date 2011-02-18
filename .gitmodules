@@ -77,3 +77,7 @@
 [submodule "nginx-upload-progress-module"]
         path = src/nginx-upload-progress-module
         url = git://github.com/masterzen/nginx-upload-progress-module.git
+
+[submodule "nginx-upload-module"]
+        path = src/nginx-upload-module
+        url = https://github.com/vkholodkov/nginx-upload-module.git

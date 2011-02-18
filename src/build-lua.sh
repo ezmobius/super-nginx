@@ -2,9 +2,8 @@
 
 # have to hand install this one sorry http://www.cmake.org/files/v2.8/cmake-2.8.3-Darwin-universal.tar.gz
 
-
-
 if [ "$1" == "cleanup" ]; then
+  ourdir=`pwd`
   echo "Cleaning up old luajit install"
   cd /usr/local/share
   sudo rm -rf lua luajit-2.0.0-beta6
@@ -12,6 +11,7 @@ if [ "$1" == "cleanup" ]; then
   sudo rm -rf  lua luarocks libev* libluajit* libzmq.la libzmq.dylib libzmq.a libzmq.1.dylib 
   sudo  rm -rf /usr/local/bin/luajit
   sudo rm -rf /usr/local/bin/lua* /usr/local/lib/liblua*
+  cd $ourdir
 fi;
 
 pushd /tmp
